@@ -7,6 +7,7 @@
     <meta name="description" content="Support for DailyGram">
     <meta name="author" content="Jo">
     <title>DailyGram Support</title>
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,12 +17,18 @@
             font-size: 100%;
             vertical-align: baseline;
             background: transparent;
+            font-family: 'Sriracha', cursive;
+            color: #ffffff;
+        }
+        .info {
+            color: #000000;
         }
         .container-main {
             width: 100vw;
             height: 100vh;
             display: flex;
             flex-direction: column;
+            background-color: #25C7FF;
         }
         .container-section {
             width: 100vw;
@@ -34,13 +41,23 @@
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            padding: 32px;
         }
         .gallery-content {
-            margin: 16px 0;
+            margin: 16px 16px;
         }
         .email-link {
             margin: 0px 6px;
+        }
+        .container-img {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 16px 0;
+        }
+        .img {
+            width: 100vw;
+            max-width: 500px;
         }
     </style>
 </head>
@@ -48,20 +65,24 @@
 <body>
     <div class="container-main">
         <div class="container-section">
-            <b>DailyGram Support Page</b>
+            <b class="info">DailyGram Support Page</b>
         </div>
         <div class="gallery">
             <p class="gallery-content">We are here to help you learn English!</p>
             <p class="gallery-content">If you have a feature request, please use this <a class="email-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdTKKpdL_t3M0BOvNFqAxln_QI9WZNOxb2ePFOlvuCtMU7Ikg/viewform?embedded=true">form</a>to let us know!</p>
-            <p class="gallery-content">Thank you for using our app (Jo and Su).</p>
+            <p class="gallery-content">Thank you for using our app (Joseph and Sookang).</p>
+            <div class="container-img">
+                <img src="./giraffe.jpg" class="img" />
+            </div>
+            <p class="gallery-content">Illustrations by Sookang Choi</p>
         </div>
         <div class="container-section">
-            <a href="https://chousemath.github.io/GrammarHack-terms/">
+            <a href="https://chousemath.github.io/GrammarHack-terms/" class="info">
                 Terms of Use / Privacy Policy
             </a>
         </div>
-        <div class="container-section">
-            For support, email <a class="email-link" href="mailto: jo@paw-kitchen.com">jo@paw-kitchen.com</a>
+        <div class="container-section info">
+            For support, email <a class="email-link info" href="mailto: jo@paw-kitchen.com">jo@paw-kitchen.com</a>
         </div>
     </div>
 </body>
